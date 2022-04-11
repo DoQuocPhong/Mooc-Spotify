@@ -3,6 +3,17 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "@enums/*": [
+        "src/app/enums/*",
+      ],
+      "@components/*": [
+        "src/app/components/*"
+      ],
+      "@common/*": [
+        "src/app/common/*"
+      ]
+    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,

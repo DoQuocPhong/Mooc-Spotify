@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Mooc_Spotify_DoQUocPhong';
+  title = 'Mooc_Spotify_DoQuocPhong';
 }

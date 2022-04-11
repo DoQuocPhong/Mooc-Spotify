@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'Mooc_Spotify_DoQUocPhong'`, () => {
+  it(`should have as title 'Mooc_Spotify_DoQuocPhong'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Mooc_Spotify_DoQUocPhong');
+    expect(app.title).toEqual('Mooc_Spotify_DoQuocPhong');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('Mooc_Spotify_DoQUocPhong app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('Mooc_Spotify_DoQuocPhong app is running!');
   });
 });
