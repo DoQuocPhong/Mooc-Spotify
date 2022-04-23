@@ -1,0 +1,210 @@
+/* .btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 700 1.2rem 'Roboto Slab', sans-serif;
+    padding: 0.75em 2em;
+    letter-spacing: 0.05rem;
+    margin: 1em;
+    width: 13rem;
+  }
+  
+.btn:focus {
+outline: 2px dotted #55d7dc;
+}
+
+.draw-border {
+    box-shadow: inset 0 0 0 4px #58cdd1;
+    color: #58afd1;
+    -webkit-transition: color 0.25s 0.0833333333s;
+    transition: color 0.25s 0.0833333333s;
+    position: relative;
+  }
+  
+  .draw-border::before,
+  .draw-border::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0rem;
+    height: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .draw-border::before {
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+  }
+  
+  .draw-border::after {
+    border-top-width: 4px;
+    border-right-width: 4px;
+  }
+  
+  .draw-border:hover {
+    color: #ffe593;
+  }
+  
+  .draw-border:hover::before,
+  .draw-border:hover::after {
+    border-color: #eb196e;
+    -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .draw-border:hover::before {
+    -webkit-transition-delay: 0s, 0s, 0.25s;
+    transition-delay: 0s, 0s, 0.25s;
+  }
+  
+  .draw-border:hover::after {
+    -webkit-transition-delay: 0s, 0.25s, 0s;
+    transition-delay: 0s, 0.25s, 0s;
+  } */
+
+  $primary: #F44336;
+  $secondary: #03A9F4;
+
+  i {
+    cursor: pointer;
+  }
+
+  .player {
+    overflow: hidden;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.6);
+    position: relative;
+    width: 320px;
+    height: 510px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    .cover {
+      position: absolute;
+      z-index: 1;
+      width: 320px;
+      height: 250px;
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(http://static.stereogum.com/blogs.dir/2/files/2011/12/Adele-21.jpg) center bottom;
+      background-size: cover;
+    }
+    
+    nav {
+      margin-top: 5px;
+      position: relative;
+      z-index: 3;
+      min-height: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 15px;
+      
+      .left {
+        display: flex;
+        
+        i {
+          cursor: pointer;
+          color: white;
+        }
+        
+        h6 {
+          margin: 0;
+          padding-left: 20px;
+          color: white;
+          font-size: 18px;
+          line-height: 1.38;
+        }
+      }
+      
+      .right {
+        display: flex;
+        
+        i {
+          cursor: pointer;
+          color: white;
+        }
+        
+        .search {
+          padding-right: 10px;
+        }
+      }
+    }
+
+  .player-ui {
+		position: relative;
+		z-index: 3;
+		padding-top: 30px;
+		
+		.title {
+			display: flex;
+			justify-content: center;
+			
+			h3 {
+				margin: 0;
+				color: white;
+				font-size: 30px;
+				font-weight: 100;
+			}
+		}
+		
+		.small {
+			padding: 15px 35px 0px 35px;
+			display: flex;
+			justify-content: space-between;
+			
+			p, i {
+				margin: 0;
+				color: white;
+				font-size: 14px;
+			}
+			
+			p {
+				color: #ddd;
+			}
+			
+			i {
+				font-size: 16px;
+			}
+		}
+		
+		.progress {
+			position: relative;
+			height: 2px;
+			margin: 30px 20px 0px 20px;
+			background: rgba(255, 255, 255, 0.3);
+			
+			.played {
+				width: 20%;
+				height: 2px;
+				position: absolute;
+				background: $primary;
+				
+				.circle {
+					width: 10px;
+					height: 10px;
+					background: $primary; 
+					border-radius: 50%;
+					margin-left: 52px;
+					margin-top: -4px;
+					box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+				}
+			}
+		}
+		
+		.controls {
+			display: flex;
+			justify-content: space-between;
+			padding: 25px 50px 0px 50px;
+			
+			i {
+				color: black;
+				font-size: 32px;
+			}
+		}
+	}
+
+}

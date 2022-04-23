@@ -8,7 +8,6 @@ import { homeRoutes } from './home.routes';
 //common
 import { ButtonComponent } from '@common/button/button.component';
 import { ButtonAuthFaceComponent } from '@common/button-auth-face/button-auth-face.component';
-import { ToastrManager } from 'ng6-toastr-notifications';
 
 
 @NgModule({
@@ -21,7 +20,6 @@ import { ToastrManager } from 'ng6-toastr-notifications';
         RouterModule.forChild(homeRoutes)
   ],
   providers: [
-    {provide: ToastrManager, useClass: ToastrManager}
   ],
 })
 export class HomeModule { }

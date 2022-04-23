@@ -1,4 +1,29 @@
 <app-button [title]="'Login'"></app-button>
 <app-button-auth-face></app-button-auth-face>
 
-<button (click)="playSound()">play</button>
+<button (click)="playSound()"><i class="fa fa-facebook">play</i></button>
+
+<div class="player">
+    <div class="player-ui">
+        <div class="title">
+            <h3>Hello</h3>
+        </div>
+        <div class="small">
+            <i class="material-icons">replay</i>
+            <p>Adele</p>
+            <i class="material-icons">volume_up</i>
+        </div>
+        <div class="progress">
+            <div class="played">
+                <div class="circle"></div>
+            </div>
+        </div>
+        <div class="controls">
+            <i class="material-icons">skip_previous</i>
+            <i class="material-icons">play_arrow</i>
+            <i class="material-icons">skip_next</i>
+        </div>
+    </div>
+</div>
+
+

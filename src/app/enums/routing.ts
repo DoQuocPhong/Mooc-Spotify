@@ -1,3 +1,4 @@
 export enum Routing {
-    Home = 'home'
+    Home = 'home',
+    Login = 'login'
 }

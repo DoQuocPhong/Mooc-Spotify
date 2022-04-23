@@ -1,5 +1,4 @@
 import { Component, Injectable, OnInit } from '@angular/core';
-// import { ToastrManager } from 'ng6-toastr-notifications';
 
 declare var FB: any;
 
@@ -11,9 +10,8 @@ declare var FB: any;
 @Injectable({ providedIn: 'root' })
 export class ButtonAuthFaceComponent implements OnInit {
 
-  // constructor( public toastr: ToastrManager) { }
-
   ngOnInit(): void {
+    //authen face
     (window as any).fbAsyncInit = function() {
       FB.init({
         appId      : '425745602693185',
@@ -23,22 +21,6 @@ export class ButtonAuthFaceComponent implements OnInit {
       });
       FB.AppEvents.logPageView();
     };
-  
-    // (function(d, s, id){
-    //    var js, fjs = d.getElementsByTagName(s)[0];
-    //    if (d.getElementById(id)) {return;}
-    //    js = d.createElement(s); js.id = id;
-    //    js.setAttribute('src', 'https://connect.facebook.net/en_US/sdk.js');
-    //   //  js.src = "https://connect.facebook.net/en_US/sdk.js";
-    //   //  fjs.parentNode.insertBefore(js, fjs)!;
-    //    if (fjs.parentNode === null) {
-    //     alert('oops');
-    //   } else {
-    //     // since you've done the nullable check
-    //     // TS won't complain from this point on
-    //     fjs.parentNode.insertBefore(js, fjs)!; // <- no error
-    //   }
-    //  }(document, 'script', 'facebook-jssdk'));
 
      (function(d, s, id){
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -65,7 +47,6 @@ export class ButtonAuthFaceComponent implements OnInit {
           console.log('submitLogin',response);
           if (response.authResponse)
           {
-            // this.toastr.successToastr('login successful', 'Success!');
             console.log('User login done');
           }
            else
