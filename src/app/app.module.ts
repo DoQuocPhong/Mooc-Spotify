@@ -8,7 +8,6 @@ import { RouterModule, Routes } from '@angular/router';
 //enum
 import { Routing } from './enums/routing';
 import { ToastrManager } from 'ng6-toastr-notifications';
-import { PlayBarComponent } from './common/play-bar/play-bar.component';
 
 const routes: Routes = [
   {
@@ -24,7 +23,6 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    PlayBarComponent,
   ],
   imports: [
     BrowserModule,

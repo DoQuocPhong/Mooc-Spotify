@@ -8,6 +8,7 @@ import { homeRoutes } from './home.routes';
 //common
 import { ButtonComponent } from '@common/button/button.component';
 import { ButtonAuthFaceComponent } from '@common/button-auth-face/button-auth-face.component';
+import { PlayBarComponent } from '@common/play-bar/play-bar.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { ButtonAuthFaceComponent } from '@common/button-auth-face/button-auth-fa
         HomeComponent,
         ButtonComponent,
         ButtonAuthFaceComponent,
+        PlayBarComponent,
   ],
   imports: [
         RouterModule.forChild(homeRoutes)

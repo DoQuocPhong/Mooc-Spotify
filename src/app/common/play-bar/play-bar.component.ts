@@ -5,11 +5,6 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './play-bar.component.html',
   styleUrls: ['./play-bar.component.css']
 })
-export class PlayBarComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+export class PlayBarComponent {
 
 }
